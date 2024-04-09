@@ -37,7 +37,7 @@ const ServiceCard: FC<ServiceCardProps> = ({ icon, index, title }) => {
 const About: FC = () => {
   return (
     <SectionWrapper idName="about">
-      <motion.div variants={textVariant(10)}>
+      <motion.div variants={textVariant(0)}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>

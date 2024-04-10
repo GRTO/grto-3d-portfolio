@@ -17,7 +17,7 @@ const Computers: FC<ComputersProps> = ({ isMobile }) => {
 
   return (
     <>
-      <hemisphereLight intesity={0.15} groundColor="black" />
+      <hemisphereLight intensity={0.15} groundColor="black" />
       <pointLight intensity={1} />
       <spotLight
         position={[-1, 3, 1]}

@@ -2,10 +2,10 @@ import { BrowserRouter } from "react-router-dom";
 
 import {
   About,
-  BallCanvas,
-  ComputersCanvas,
+  /* BallCanvas,
+  ComputersCanvas, */
   Contact,
-  EarthCanvas,
+  /* EarthCanvas, */
   Experience,
   Feedbacks,
   Hero,

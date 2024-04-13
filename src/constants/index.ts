@@ -196,6 +196,10 @@ const testimonials = [
   },
 ];
 
+const blueGradientText = "bg-gradient-to-r from-blue-500 to-blue-400 text-transparent bg-clip-text";
+const greenGradientText = "bg-gradient-to-r from-green-500 to-green-400 text-transparent bg-clip-text";
+const pinkGradientText = "bg-gradient-to-r from-pink-500 to-pink-400 text-transparent bg-clip-text";
+
 const projects = [
   {
     name: "Car Rent",
@@ -204,15 +208,15 @@ const projects = [
     tags: [
       {
         name: "react",
-        color: "blue-text-gradient",
+        color: blueGradientText,
       },
       {
         name: "mongodb",
-        color: "green-text-gradient",
+        color: greenGradientText,
       },
       {
         name: "tailwind",
-        color: "pink-text-gradient",
+        color: pinkGradientText,
       },
     ],
     image: carrent,
@@ -225,15 +229,15 @@ const projects = [
     tags: [
       {
         name: "react",
-        color: "blue-text-gradient",
+        color: blueGradientText,
       },
       {
         name: "restapi",
-        color: "green-text-gradient",
+        color: greenGradientText,
       },
       {
         name: "scss",
-        color: "pink-text-gradient",
+        color: pinkGradientText,
       },
     ],
     image: jobit,
@@ -246,15 +250,15 @@ const projects = [
     tags: [
       {
         name: "nextjs",
-        color: "blue-text-gradient",
+        color: blueGradientText,
       },
       {
         name: "supabase",
-        color: "green-text-gradient",
+        color: greenGradientText,
       },
       {
         name: "css",
-        color: "pink-text-gradient",
+        color: pinkGradientText,
       },
     ],
     image: tripguide,

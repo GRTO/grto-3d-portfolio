@@ -1,25 +1,69 @@
-import { /* useEffect, */ useRef, useState } from "react";
+import {
+  ChangeEvent,
+  FormEvent,
+  useRef,
+  useState,
+} from "react";
 import { motion } from "framer-motion";
-/* import emailjs from "@emailjs/browser"; */
+import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+const initialDataForm = {
+  name: "",
+  email: "",
+  message: "",
+};
+
 const Contact = () => {
   const formRef = useRef<HTMLFormElement>(null);
-  const [form, /* setForm */] = useState({
-    name: "",
-    email: "",
-    messge: "",
-  });
+  const [form, setForm] = useState(initialDataForm);
 
-  const [loading, /* setLoading */] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleChange = () => {};
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    console.log(e.target);
 
-  const handleSubmit = () => {};
+    setForm({ ...form, [name]: value });
+  };
+
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .send(
+        "service_token",
+        "template_token",
+        {
+          from_name: form.name,
+          to_name: "Gerson Toribio",
+          from_email: form.email,
+          to_email: "gerson.ricardo.toribio.ossio@gmail.com",
+          message: form.message,
+        },
+        "punlic_key"
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thank you! You will get a response as soon as possible");
+
+          setForm(initialDataForm);
+        },
+        (error) => {
+          setLoading(false);
+          console.error(error);
+          alert("Something went wrong, please try later");
+        }
+      );
+  };
 
   return (
     <SectionWrapper idName="contact">
@@ -65,7 +109,7 @@ const Contact = () => {
               <textarea
                 rows={7}
                 name="message"
-                value={form.messge}
+                value={form.message}
                 onChange={handleChange}
                 placeholder="What do you want to say?"
                 className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
@@ -76,7 +120,7 @@ const Contact = () => {
               type="submit"
               className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
             >
-              {loading ? "Sending" : "Send"}
+              {loading ? "Sending..." : "Send"}
             </button>
           </form>
         </motion.div>

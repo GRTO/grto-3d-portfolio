@@ -16,7 +16,7 @@ import {
   figma,
   docker,
   meta,
-  starbucks,
+  evolution,
   tesla,
   shopify,
   carrent,
@@ -116,16 +116,20 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Senior frontend engineer",
+    company_name: "Evoluion",
+    icon: evolution,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Sep 2023 - Until now",
     points: [
+      "Developed new features for different variants of the Blackjack game.",
+      "Animated 3D scenes for different casino brandings.",
+      "Created scripts to reduce the size of 3D assets improving the loading game experience.",
+      "Animated 3D scenes for different casino brandings.",
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Coordinated with the business manager and UX Designers to define new features.",
     ],
   },
   {

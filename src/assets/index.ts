@@ -26,6 +26,7 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import evolution from "./company/evolution.jpeg";
+import zoovu from "./company/zoovu.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -61,4 +62,5 @@ export {
   jobit,
   tripguide,
   evolution,
+  zoovu,
 };

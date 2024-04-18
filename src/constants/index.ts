@@ -133,16 +133,14 @@ const experiences = [
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
+    title: "Freelance Software Developer",
+    company_name: "Zoovu",
     icon: tesla,
     iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Responsible for creating the frontend architecture from scratch of the new reporting dashboard.",
+      "Improved the architecture of the frontend side of the application by adding a mocked service layer that simulates the backend services, thus reducing the delivery time to the product manager and QA team by 60%, adding any possible feedback in the early stages of the project without having all backend services ready.",
     ],
   },
   {

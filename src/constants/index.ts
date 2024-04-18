@@ -17,12 +17,12 @@ import {
   docker,
   meta,
   evolution,
-  shopify,
   carrent,
   jobit,
   tripguide,
   threejs,
   zoovu,
+  ex2,
 } from "../assets";
 
 export const navLinks = [
@@ -144,16 +144,16 @@ const experiences = [
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Software Engineer",
+    company_name: "EX2 Outcoding",
+    icon: ex2,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Dec 2019 - Aug 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Work as a consultant for SparkCognition (USA)",
+      "Responsible for guiding the team into new features. Creating and integrating new micro-frontend.",
+      "Reduced the time response of views with heavy charts by 99% by redesigning the service layer from scratch where we had been doing all the transformations..",
+      "Incorporated unit tests guidelines and best practices in the Core UI library, thus reducing the boilerplate code by 60%, improving the onboarding process and test standards",
     ],
   },
   {

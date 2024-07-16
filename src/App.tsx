@@ -2,12 +2,8 @@ import { BrowserRouter } from "react-router-dom";
 
 import {
   About,
-  /* BallCanvas,
-  ComputersCanvas, */
   Contact,
-  /* EarthCanvas, */
   Experience,
-  Feedbacks,
   Hero,
   Navbar,
   StarsCanvas,
@@ -27,7 +23,6 @@ function App() {
         <Experience />
         <Tech />
         <Works />
-        <Feedbacks />
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />

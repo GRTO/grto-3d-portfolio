@@ -14,15 +14,16 @@ import {
   mongodb,
   git,
   figma,
-  docker,
-  meta,
   evolution,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
   zoovu,
   ex2,
+  mobx,
+  tektonLabs,
+  gnbit,
+  zoovuProject,
+  searchEngineProject,
+  avatarLookingProject,
 } from "../assets";
 
 export const navLinks = [
@@ -42,11 +43,11 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Frontend Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "3D Web Developer",
     icon: mobile,
   },
   {
@@ -54,19 +55,15 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Enthusiastic 3D Modeler",
     icon: creator,
   },
 ];
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
+    name: "React JS",
+    icon: reactjs,
   },
   {
     name: "JavaScript",
@@ -77,12 +74,24 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
     name: "Redux Toolkit",
     icon: redux,
+  },
+  {
+    name: "Mobx",
+    icon: mobx,
+  },
+  {
+    name: "Three JS",
+    icon: threejs,
+  },
+  {
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
   },
   {
     name: "Tailwind CSS",
@@ -97,20 +106,12 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
   },
   {
     name: "figma",
     icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 
@@ -133,7 +134,7 @@ const experiences = [
     ],
   },
   {
-    title: "Freelance Software Developer",
+    title: "Senior Frontend Engineer | Freelance",
     company_name: "Zoovu",
     icon: zoovu,
     iconBg: "#E6DEDD",
@@ -144,7 +145,7 @@ const experiences = [
     ],
   },
   {
-    title: "Software Engineer",
+    title: "Full stack Engineer",
     company_name: "EX2 Outcoding",
     icon: ex2,
     iconBg: "#383E56",
@@ -157,15 +158,27 @@ const experiences = [
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Frontend developer",
+    company_name: "Tekton Labs",
+    icon: tektonLabs,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Jan 2019 - Dec 2019",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Implemented an interactive form based on user needs, thus reducing the time spent by the user configuring the services by 99%, improving the user experience when filling out the services configuration form.",
+      "Reduced the time to obtain information about the user's prescription by 80% by redesigning the web application following the UI/UX team requirements.",
+      "Responsible for the integration of the Linux Foundation clients’ social media information with the existing platform",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Team Lead Frontend engineer",
+    company_name: "GNBIT",
+    icon: gnbit,
+    iconBg: "#E6DEDD",
+    date: "Aug 2017 - Jan 2019",
+    points: [
+      "Led the frontend team. Responsible for analyzing user requirements for the platform that manages the budget of the UNAM university.",
+      "Improved the platform response time by 90% by restructuring the Redux state management of the web application and improving the way RxJs has been used.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
@@ -204,67 +217,67 @@ export const pinkGradientText = "bg-gradient-to-r from-pink-500 to-pink-400 text
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Zoovu Challenge",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "It is a mini game when we have a timer running a we need to drag and drop the 5 letters in order to form the word Zoovu.",
     tags: [
       {
         name: "react",
         color: blueGradientText,
       },
       {
-        name: "mongodb",
+        name: "mobx",
         color: greenGradientText,
       },
       {
-        name: "tailwind",
+        name: "styled-components",
         color: pinkGradientText,
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: zoovuProject,
+    source_code_link: "https://github.com/GRTO/zoovu-challenge",
   },
   {
-    name: "Job IT",
+    name: "Search engine",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "In this project I created a scalable search engine. It is using behind the scene some search engines like google and bing. I added a way to handle new services for search engines.",
     tags: [
       {
         name: "react",
         color: blueGradientText,
       },
       {
-        name: "restapi",
+        name: "redux",
         color: greenGradientText,
       },
       {
-        name: "scss",
+        name: "material UI",
         color: pinkGradientText,
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: searchEngineProject,
+    source_code_link: "https://github.com/GRTO/search-engine?tab=readme-ov-file",
   },
   {
-    name: "Trip Guide",
+    name: "Avatar Looking",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "In this project I render particles using canvas api reacting to the mouse position. Also, I used ThreeJs to move the 3D model to follow the mouse's position",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: blueGradientText,
       },
       {
-        name: "supabase",
+        name: "three js",
         color: greenGradientText,
       },
       {
-        name: "css",
+        name: "canvas 2D",
         color: pinkGradientText,
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: avatarLookingProject,
+    source_code_link: "https://github.com/GRTO/avatar-looking",
   },
 ];
 

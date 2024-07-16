@@ -20,6 +20,7 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import mobx from "./tech/mobx.png"
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -28,10 +29,15 @@ import tesla from "./company/tesla.png";
 import evolution from "./company/evolution.jpeg";
 import zoovu from "./company/zoovu.png";
 import ex2 from "./company/ex2.jpeg";
+import tektonLabs from "./company/tektonLabs.jpg";
+import gnbit from "./company/gnbit.jpeg";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import zoovuProject from "./zoovu_project.png";
+import searchEngineProject from "./search_engine_project.png";
+import avatarLookingProject from "./avatar_looking_project.png";
 
 export {
   logo,
@@ -55,11 +61,17 @@ export {
   tailwind,
   typescript,
   threejs,
+  mobx,
   meta,
   shopify,
   starbucks,
   tesla,
+  tektonLabs,
+  gnbit,
   carrent,
+  zoovuProject,
+  searchEngineProject,
+  avatarLookingProject,
   jobit,
   tripguide,
   evolution,

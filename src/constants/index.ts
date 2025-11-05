@@ -121,11 +121,11 @@ const experiences = [
     company_name: "Evoluion",
     icon: evolution,
     iconBg: "#383E56",
-    date: "Sep 2023 - Until now",
+    date: "Sep 2022 - Until now",
     points: [
       "Developed new features for different variants of the Blackjack game.",
       "Animated 3D scenes for different casino brandings.",
-      "Created scripts to reduce the size of 3D assets improving the loading game experience.",
+      "Created scripts to reduce the size of 3D assets, improving the loading game experience.",
       "Animated 3D scenes for different casino brandings.",
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
